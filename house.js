@@ -21,9 +21,8 @@ const iframe = document.getElementById("iframe");
 
 
 
-let houseobj = (document.cookie.substring(4))
+let houseobj = sessionStorage.getItem("arr");
 let house = JSON.parse(houseobj);
-document.cookie="";
         
  
 

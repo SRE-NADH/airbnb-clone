@@ -54,8 +54,7 @@ function addtoUi(arr){
      </div>`
     container.append(house);
     house.addEventListener("click",(e)=>{
-        e.preventDefault();
-     document.cookie = `arr=${JSON.stringify(arr[i])};path=/`
+     sessionStorage.setItem("arr",JSON.stringify(arr[i]))
      window.location.href = "./house.html"
     })
     }
